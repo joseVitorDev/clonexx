@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .container {
   margin: 0;
   padding: 0;
@@ -36,7 +35,8 @@
   transform: scalex(1.5);
 }
 
-.netflix::after, h3::before {
+.netflix::after,
+h3::before {
   content: "";
   position: absolute;
   top: 0;
@@ -95,4 +95,24 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 10px;
   overflow: hidden;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+}
+
+.botao-pulsante {
+  border-radius: 5px;
+  animation: pulsar 1.5s infinite;
 }

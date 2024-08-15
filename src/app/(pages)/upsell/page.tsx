@@ -3,9 +3,11 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { useBalance } from "@/hook/useBalance";
-import Banner from '@/assets/banner.png'
+import Banner from '@/assets/banner.png';
+import Lock from '@/assets/lock.png';
 import Image from "next/image";
 import Link from "next/link";
+
 
 export default function Upsell() {
 
@@ -20,18 +22,20 @@ export default function Upsell() {
         <main className="absolute inset-x-0 top-24 md:top-48 flex flex-col text-white text-center px-4 items-center">
 
           <div className="max-w-[40rem] space-y-6">
-          <div className="bg-red-700 text-white p-4 rounded-md text-xl font-bold w-full mt-6">
-            ATENÇÃO
+          <div className="bg-red-700 text-white p-4 rounded-md text-xl font-bold w-full mt-6 flex items-center flex-col ">
+             <Image src={Lock} className="w-20 h-20 mb-4" alt="Logo Pix" />
+            SALDO BLOQUEADO!
           </div>
           <p className="mt-4 text-lg font-medium">
-            Para receber seu lucro de {balance} basta realizar seu cadastro no botão abaixo e pagar uma pequena Taxa de Cadastro! no valor de R$19,91. <br /><br />
-            Mas fique tranquilo(a), este valor de R$19,91 irá retornar para sua conta junto com seu Saque de {balance}.
+            O acesso ao seu saldo está temporariamente bloqueado. Para liberar o saldo de {balance} e acessar todas as funcionalidades do nosso aplicativo, é necessário efetuar o pagamento de uma taxa de liberação.
           </p>
-        <Link href="https://pay.comprassite.com/checkout/4ae61d84-4d08-46fa-9f18-1d392ae6bb1c" >
-        <button className= "bg-red-700 text-white font-bold py-3 px-6 rounded-md text-lg mt-6">
-            Pagar taxa e receber meu saque
+          <p className="mt-4 text-lg font-medium"><strong>Importante:</strong> O pagamento desta taxa é indispensável para garantir a segurança da sua conta e liberar o acesso ao saldo bloqueado.</p>
+        <Link href="https://pay.comprassite.com/checkout/9a93b519-a18d-4812-a62a-5513c97bd54d" >
+        <button className= "bg-red-700 text-white font-bold py-3 px-6 rounded-md text-lg mt-6 botao-pulsante">
+            Clique aqui para pagar a taxa e desbloquear seu saldo agora!
         </button>
           </Link>
+          
           </div>
         </main>
       </div>
