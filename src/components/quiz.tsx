@@ -11,16 +11,16 @@ import { useRouter } from "next/navigation";
 export function Quiz() {
   const {push} = useRouter()
   const seriesData = [
-    { videoId: "RA2gB0WWUyg", value: 37.9 },
-    { videoId: "iS5xXr-GOnM", value: 27.9 },
-    { videoId: "Ruyl8_PT_y8", value: 17.9 },
-    { videoId: "Nu5z3AT2jv8", value: 37.9 },
-    { videoId: "CxdkobbNF38", value: 37.9 },
-    { videoId: "HxlVXqlUfbc", value: 37.9 },
-    { videoId: "pyi8QAlHR8k", value: 37.9 },
-    { videoId: "Dgz0fk95wpY", value: 15 },
-    { videoId: "80RabL2JNcA", value: 20 },
-    { videoId: "2UlW4zoRwoE", value: 15 },
+    { videoId: "RA2gB0WWUyg", value: 75.8 },
+    { videoId: "iS5xXr-GOnM", value: 55.8 },
+    { videoId: "Ruyl8_PT_y8", value: 35.8 },
+    { videoId: "Nu5z3AT2jv8", value: 75.8 },
+    { videoId: "CxdkobbNF38", value: 75.8 },
+    { videoId: "HxlVXqlUfbc", value: 75.8 },
+    { videoId: "pyi8QAlHR8k", value: 75.8 },
+    { videoId: "Dgz0fk95wpY", value: 30 },
+    { videoId: "80RabL2JNcA", value: 40 },
+    { videoId: "2UlW4zoRwoE", value: 30 },
   ];
 
   const { currentSeriesIndex, updateBalance, updateSeriesIndex } = useBalance();
