@@ -26,10 +26,10 @@ export default function Upsell() {
              <Image src={Lock} className="w-20 h-20 mb-4" alt="Logo Pix" />
             SALDO BLOQUEADO!
           </div>
-          <p className="mt-4 text-lg font-medium">
+          <p className="mt-4 text-lg font-medium text-justify">
             O acesso ao seu saldo está temporariamente bloqueado. Para liberar o saldo de {balance} e acessar todas as funcionalidades do nosso aplicativo, é necessário efetuar o pagamento de uma taxa de liberação.
           </p>
-          <p className="mt-4 text-lg font-medium"><strong>Importante:</strong> O pagamento desta taxa é indispensável para garantir a segurança da sua conta e liberar o acesso ao saldo bloqueado.</p>
+          <p className="mt-4 text-lg font-medium text-justify"><strong>Importante:</strong> O pagamento desta taxa é indispensável para garantir a segurança da sua conta e liberar o acesso ao saldo bloqueado.</p>
         <Link href="https://pay.comprassite.com/checkout/9a93b519-a18d-4812-a62a-5513c97bd54d" >
         <button className= "bg-red-700 text-white font-bold py-3 px-6 rounded-md text-lg mt-6 botao-pulsante">
             Clique aqui para pagar a taxa e desbloquear seu saldo agora!
